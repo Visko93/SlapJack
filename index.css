@@ -1,0 +1,157 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: darkgreen;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#opponent-face {
+  font-size:15vh;
+}
+
+#opponent-deck, #player-deck {
+  height:21vh;
+  text-align: center;
+
+}
+
+#opponent-deck > * {
+  margin-right:35vw;
+  pointer-events:none;
+}
+
+#player-deck > * {
+  margin-left:35vw;
+  pointer-events:none;
+}
+
+#discard-pile {
+  margin: 4vh 0px;
+  visibility: hidden;
+}
+
+#discard-pile > * {
+  pointer-events:none;
+}
+#label-player, #label-opnt {
+  color: #FFE9E5;
+  font-size: 2em;
+}
+.card {
+  border-radius:5px;
+  background-color:#FFFFFF;
+  width:15vh;
+  height:21vh;
+  min-height: 150px;
+  min-width: 40px;
+}
+
+.card-back {
+  background-color: #011F05;
+  background: radial-gradient(#FE2258, #FFE9E5);
+  border: 2px solid #FFE9E5;
+  background-size: 10%;
+  background-repeat: repeat-x;
+}
+
+#play-again-wrapper {
+  position:absolute;
+  display:none;
+  height:100%;
+  width:100%;
+  left:0px;
+  top:0px;
+  flex-flow: column;
+  justify-content: center;
+  opacity: .9;
+  
+}
+
+#play-again-control, #win-lose-status {
+  padding: 5vh 0;
+  width:100%;
+  background-color: #FFFFFF;
+  text-align:center;
+  
+}
+.btn {
+  padding: 12px 18px;
+  background-color: transparent;
+  border: 1px solid #000F00;
+  transition: ease-in .4s;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: .8;
+  cursor: pointer;
+  color: #FFE9E5;
+  background-color: rgba(0, 15, 0, .7);
+  border: 3px solid #FFE9E5;
+}
+
+.card-front {
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:3.5vh;
+
+}
+.selection {
+  position: absolute;
+  display: inline-flex;
+  width: 4vw;
+  min-width: 3vw;
+  font-size: 2em;
+  color: #FFE9E5;
+  padding: 18px 25px;
+  flex: 100%;
+  flex-wrap: wrap;
+}
+.active {
+  color: #a3FF25;
+  text-shadow: 0 5px 15px #000F00;
+}
+.option:hover,
+.option:focus {
+  cursor: pointer;
+  opacity: .7;
+  transition: ease-out .3s;
+}
+
+.right-side-up {
+  position:absolute;
+  left:0.4vh;
+  top:0.4vh;
+  text-align:center;
+}
+
+.flipped {
+  position:absolute;
+  right:0.4vh;
+  bottom:0.4vh;
+  text-align:center;
+  transform: rotate(180deg);
+}
+
+.card-art {
+  display:flex;
+  flex-flow: row wrap;
+  width:60%;
+}
+
+.card-art > * {
+  flex: 50%;
+  text-align:center;
+  
+}
+
+.red {
+  color: #FF0000;
+}
