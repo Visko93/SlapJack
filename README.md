@@ -2,7 +2,7 @@
 
 ## Live Demo - [SlapJack](https://slapjack-fepath.netlify.app/)
 
-[<video src="https://drive.google.com/file/d/16cepANPKkQunQ_35MwU9jMcn9YSX-S9A/preview" width="50%">](https://drive.google.com/file/d/16cepANPKkQunQ_35MwU9jMcn9YSX-S9A/preview)
+![slapjack.gif](https://j.gifs.com/L7y7xD.gif)
 
 ---
 
@@ -11,3 +11,6 @@
 ```
 git clone https://github.com/Visko93/SlapJack
 ```
+
+
+### This project is part of the Front-End Carrer Path, from [scrimba](https://scrimba.com/).
